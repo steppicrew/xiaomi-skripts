@@ -4,7 +4,7 @@ for package in com.miui.analytics com.xiaomi.mipicks com.miui.systemAdSolution c
 com.miui.msa.global com.miui.screenrecorder com.miui.gallery com.miui.mediaeditor com.miui.android.fashiongallery com.miui.qr com.miui.bugreport com.miui.phrase com.miui.mediaviewer com.miuix.editor com.miui.touchassistant com.miui.misound com.miui.mishare.connectivity com.miui.micloudsync com.miui.miservice com.google.android.apps.tachyon com.miui.thirdappassistant \
 com.google.android.videos com.google.android.apps.youtube.music com.google.android.apps.bard com.mi.android.globalFileexplorer com.android.providers.downloads.ui com.miui.thirdappassistant com.mi.globalminusscreen
 do
-    adb shell pm uninstall -k --user 0 "$package"
+    adb shell pm uninstall --user 0 "$package"
 done
 
 adb shell pm disable-user --user 0 com.miui.screenrecorder
